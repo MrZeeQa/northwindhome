@@ -1,0 +1,23 @@
+﻿/* Rating */
+.ratingStar {
+    font-size: 0pt;
+    width: 64px;
+    height: 59px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar {
+    background-image: url(img/FilledStar.png);
+}
+
+.emptyRatingStar {
+    background-image: url(img/EmptyStar.png);
+}
+
+.savedRatingStar {
+    background-image: url(img/SavedStar.png);
+}

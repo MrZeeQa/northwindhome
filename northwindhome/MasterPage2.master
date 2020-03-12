@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+<%@ Register Src="~/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/Navigation.ascx" TagPrefix="uc1" TagName="Navigation" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Modern Business - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="stars.css" rel="stylesheet" >
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+  <uc1:Navigation runat="server" ID="Navigation" />
+
+<!-- Navigation -->
+  <form id="form1" runat="server">
+ <div><!-- begin ASP.NET div element -->
+ <!-- Page Content -->
+     <div class="container">
+ <!-- Page Heading/Breadcrumbs -->
+ <div class="row">
+ <div class="col-lg-12">
+ <h1 class="page-header">Northwind
+ <small>CRUD-operations</small>
+ </h1>
+ <ol class="breadcrumb">
+ <li><a href="index.html">Home</a>
+</li>
+<li class="active">Full Width Page</li>
+ </ol>
+ </div>
+ </div>
+ <!-- /.row -->
+ <!-- Content Row -->
+ <div class="row">
+ <div class="col-lg-12">
+ <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+     <p>
+         Most of Start Bootstrap's unstyled templates can be directly integrated into
+the Modern Business template. You can view all of our unstyled templates on our website at <a href="http://startbootstrap.com/templatecategories/unstyled">http://startbootstrap.com/template-categories/unstyled</a>.</p>
+ </asp:ContentPlaceHolder>
+
+ </div>
+ </div>
+         </div>
+ <!-- /.row -->
+ <hr>
+ <uc1:Footer runat="server" ID="Footer" />
+
+
+
+  </div> <!-- end ASP.NET div element -->
+ </form>
+ 
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
