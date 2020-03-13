@@ -5,7 +5,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    
+
+    <asp:Panel ID="PanelReviewInsert" runat="server">
     <asp:DropDownList ID="DropDownListProducts" runat="server" OnSelectedIndexChanged="DropDownListProducts_Redirect">
     </asp:DropDownList>
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
@@ -26,6 +27,10 @@
     <br />
     <br />
     <asp:Button ID="ButtonSubmit" runat="server" Text="Submit" OnClick="ButtonSubmit_Click" />
-     <asp:Label ID="LabelErrorMessage" runat="server" />
+        <asp:Label ID="LabelErrorMessage" runat="server" />
+        </asp:Panel>
+    <asp:Panel ID="PanelUserMessage" runat="server">Uw review werd succesvol ingediend.</asp:Panel>
+     
+
 </asp:Content>
 

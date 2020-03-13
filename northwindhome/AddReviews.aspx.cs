@@ -19,8 +19,8 @@ public partial class AddReviews : System.Web.UI.Page
         if (!Page.IsPostBack)
         {
             LoadDropDownListProducts();
-          
-           
+
+            PanelUserMessage.Visible = false;
         }
 
 
@@ -60,12 +60,14 @@ public partial class AddReviews : System.Web.UI.Page
         {
             ReviewCS NewRev = new ReviewCS();
             NewRev.AddReview(Convert.ToInt32(RatingProduct.CurrentRating), TextBoxReview.Text, Convert.ToDateTime(DateTime.Now), Convert.ToInt32(DropDownListProducts.SelectedItem.Value));
+            PanelReviewInsert.Visible = false;
+            PanelUserMessage.Visible = true;
 
-          
         }
         catch (Exception ex)
         {
             LabelErrorMessage.Text = ex.Message.ToString();
+           
 
         }
     }
